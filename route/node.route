@@ -1,0 +1,15 @@
+{
+  "name": "node",
+  "check": "node -v",
+  "download": {
+    "urlRoot": [
+      "https://nodejs.org/dist"
+    ],
+    "process": "commonProcess",
+    "url": "${urlRoot}/${version}/node-${version}-${os-name}-${os-arch}.${os-format}",
+    "versionPattern": "v(\\d+\\.){2}\\d+",
+    "operate": [
+
+    ]
+  }
+}
