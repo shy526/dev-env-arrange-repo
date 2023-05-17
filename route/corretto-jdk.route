@@ -1,0 +1,30 @@
+{
+  "name":"corretto-jdk",
+  "variable":{
+    "os-win": "windows"
+  },
+  "check":"java -version",
+  "download":{
+    "versions": [
+      {
+        "version": 8
+      },
+      {
+        "version": 11
+      },
+      {
+        "version": 17
+      },
+      {
+        "version": 20
+      }
+    ],
+    "urlRoot":[
+      "https://corretto.aws"
+    ],
+    "process":"commonProcess",
+    "url":"${urlRoot}/downloads/latest/amazon-corretto-${version}-${os-arch}-${os-name}-jdk.${os-format}"
+  },
+  "operate":[
+      ]
+  }
