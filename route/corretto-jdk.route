@@ -26,5 +26,6 @@
     "url":"${urlRoot}/downloads/latest/amazon-corretto-${version}-${os-arch}-${os-name}-jdk.${os-format}"
   },
   "operate":[
+      "env JAVA_HOME_SHY ${root} + PAHT %JAVA_HOME_SHY%\bin += CLASSPATH %.;%JAVA_HOME_SHY%\lib;%JAVA_HOME_SHY%\lib\dt.jar;%JAVA_HOME_SHY%\lib\tools.jar% + <"
       ]
   }
