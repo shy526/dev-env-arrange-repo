@@ -1,6 +1,6 @@
 {
   "name": "scala3",
-  "check": "scala -version",
+  "check": "scala -version 2>&1",
   "variable":{
     "owner":"lampepfl",
     "repo":"dotty"
@@ -10,7 +10,8 @@
       "/"
     ],
     "process": "githubProcess",
-    "url": "${urlRoot}/${version}/scala3-${version}.${os-format}"
+    "url": "${urlRoot}/${version}/scala3-${version}.${os-format}",
+    "versionPattern":"(\\d+\\.){2}\\d+(-RC\\d+)"
   },
   "operate": [
     "env SCALA_HOME_SHY ${root} + PATH %SCALA_HOME_SHY%\\bin += < "
